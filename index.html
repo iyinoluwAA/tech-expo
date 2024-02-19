@@ -3,60 +3,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
 </head>
-<body>
-     <header>
-        <div class="navbar">
-            <div ><img class="logo" src="assets/logo-7b0a9caa.svg" alt="#"></div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-                    <li><a href="hero">Speaker</a></li>
-                    <li><a href="hero">Contact</a></li>
-                    <li><a href="hero">Venue</a></li>
-                    <span class="btn-side">
-                    <li><a href="#" >Get Tickets</a></li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, vel?
-                    </span>
-                </ul> 
-            <ul class="links">
-                <li class="hideOnMobile"><a href="hero">Speaker</a></li>
-                <li  class="hideOnMobile"><a href="hero">Contact</a></li>
-                <li  class="hideOnMobile"><a href="hero">Venue</a></li>
-                <span class="action_btn">
-                <li  class="hideOnMobile"><a href="#" >Get Tickets</a></li>
-                </span>
-                <span class="toggle_btn">
-                  <li onclick=showSidebar()> <i class="fa-solid fa-bars-staggered"></i></li> 
-                 </span>
-            </ul> 
-        </nav>
+<body style="background-color: #f5f5f5;">
+        <!-- HEAD NAVBAR -->
+        <header class="fixed-top">
+          <nav class="navbar shadow header navbar-expand-md">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="assets/logo-7b0a9caa.svg" alt="Ibadan tech expo logo" width="55%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fa-solid fa-bars-staggered fam"></i></span>
+                </button>
+                <div class="collapse navbar-collapse gap-4" id="navbarCollapse">
+                  <ul class="navbar-nav gap-4 ms-auto fs-3">
+                    <li class="nav-item">
+                      <a class="nav-link text-primary" aria-current="page" href="#">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-primary" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-primary" aria-current="page" href="#">Venue</a>
+                    </li>
+                    </ul>
+                    <button class="ButttonGet btn btn-warning text-primary shadow" type="submit"><a href="#" class="ButtonGetTickets">Get Tickets</a></button>
+              </div>
+                  </div>
+            </nav>
+      </header>
+      
+   <!-- MAIN IBADAN TECH EXPO SECTION -->
+<main class="main">
+    <img class="imgdra" src="assets/ibd-7e92bb92.svg"img-fluid mx-auto d-block width="97%" alt="Text">
+    <div class="row mt-4 align-items-center">
+      <div class="col-5 col-sm-5 col-md-1 col-lg-3">
+          <h4 class="MaidenText ms-md-5 mt-2">MAIDEN EDITION</h4>
+      </div>
+  
+      <div class="col-5 col-sm-5 col-md-2 col-lg-2">
+          <span class="LineImg ms-md-1 d-block">
+              <!-- <img src="assets/line-46ed24ac.svg" alt="Line" width="100%" class="img-fluid"> -->
+              <img src="assets/line-46ed24ac.svg" alt="line" width="160%">
+          </span>
+      </div>
+  
+      <div class="col-6 col-sm-12 col-md-4 col-lg-3 text-center">
+          <span class="StarImg d-block">
+              <img src="assets/star-06b2c062.svg" class=" img-fluid  smaller-star rounded-circle  border border-success p-2 animate animate--infinite animate--slow rotate" width="13%" alt="Star">
+          </span>
+      </div>
+  
+      <div class="col-8 col-sm-8 col-md-2 col-lg-3">
+          <span class="LineArt">
+              <img src="assets/line-46ed24ac (1).svg" alt="Line" width="100%" class="img-fluid">
+          </span>
+      </div>
+  
+      <div class="col-2 col-sm-2 col-md-1 col-lg-1">
+          <h4 class="SepDate me-md-5 text-end">September 9, 2023</h4>
+      </div>
+  </div>
+  <!-- BUTTON TICKETS -->
+<div class="row m-4">
+    <div class="col-12 col-sm-12 col-md-5 col-lg-6 mt-2">
+      <button class="buyTicket bg-warning rounded-0  fw-bold w-100" type="submit">BUY TICKETS</button>
+    </div>
+    
+    <div class="col-12 col-sm-12 col-md-5 col-lg-6 mt-2">
+      <button class="becomeSponsor rounded-0 w-100 text-center fw-bold ">BECOME A SPONSOR</button>
+    </div>
+  </div>
+  <!-- CONTAINER VENUE -->
+<div class="row">
+    <div class="ContainerVenue container pt-4 pb-2 col-10 col-sm-10 col-md-10 col-lg-11 mb-5">
+      <div class=" text-light text-center">
+       <div><h2 class="venue">Venue:</h2></div>
+       <div><h4 class="center">The International Conference Center, Agbowo, Ibadan.</h4></div>
+       </div>
+    
+       <div class="mt-5 text-light text-center">
+        <div><h2 class="venue">Date:</h2></div>
+        <div><h4 class="center">Saturday, September 9th, 2023.</h4></div>
+       </div>
+    </div>
+    </div>
+    <div class="row me-2">
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <div><img src="assets/tit-514f3678.svg" width="100%" style="border-bottom: 2px solid #fdb915; padding-right: 20px;" class="ms-3" alt="About Ibadan Tech Expo"></div>
+          <p class="ibadan mt-4 ms-3">Welcome to Ibadan Tech Expo - a dynamic and vibrant gathering that celebrates the world of technology and innovation in Ibadan, Nigeria's largest city by landmass. The Ibadan Tech Expo aims to create an inclusive and engaging environment that brings together a diverse community of tech enthusiasts, professionals, and stakeholders. Whether you're a seasoned industry veteran or a newcomer looking to explore the exciting possibilities of the tech scene, this event is tailor-made for you.</p>
         </div>
-     </header>
-        <section class="sec1">
-            <div>
-                <img class="ibd-0" src="assets/ibd-7e92bb92.svg" alt="#">
-            </div>
-            <div class="two">
-                <p class="maid">MAIDEN EDITION</p>
-                <hr class="line">
-                <div class="star"><img src="assets/star-06b2c062.svg" alt=""></div>
-                <hr class="line2">
-                <p class="sep">September 9, 2023</p>
-            </div>
-        </section>
-     <script> 
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-         
-     </script>
+        <div class="col-sm-12 col-md-5 col-lg-5 mt-5">
+          <img src="assets/Poster 3 1-ed55da9d.svg" class="me-2" width="100%" alt="Poster pic">
+        </div>
+      </div>
+      <!------VENUE------->
+<div class="container my-5">
+    <div class="ms-4 mb-5 venue2">VENUE</div>
+    <div class="container venueImg container">
+      <img src="assets/Venue-1-38edfbf0.png" class="col-12" width="50%" alt=""><h2 class="pt-5 ps-5 text-white">
+        <b class="mt-5 text-light fs-2 fits">International Conference Centre <br> University of Ibadan(ICC)</b>
+      </div>
+  </div>
 </body>
 </html>
