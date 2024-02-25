@@ -131,8 +131,12 @@
 .ibadan{
     color: rgb(34, 64, 147);
     font-size: 20px;
-    
+    transform: translate(10px,50px);
     line-height: 20px;
+}
+.imr{
+    transform: translate(15px,50px);
+    width: 650px;
 }
 /*-----VENUE------*/
 .venue2{
@@ -144,6 +148,126 @@
     width: 95%;
 }
 .fits{
-    font-size: 1.5rem;
-    color: blue;
+    color: blue; 
+    position: relative;
+    top: -400px;
 }
+.venueimg{
+    position: relative
+}
+
+.imgtar{
+    position: absolute ;
+}
+/* ------VENUE, SPEAKER, AND TICKET HEADER UNDERLINE -----*/
+.ven,.speakersheader,.ticketheader{
+    border-bottom: 3px solid rgb(240, 179, 12);
+}
+.venueImg{
+    background: url(Img/ibad.an.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 350px;
+}
+.internationalConference{
+    background-image: url(Img/ibad.an.png);
+    background-position: cover;
+
+}
+.flyCardsGroup p{
+    width:70%;;
+}
+.flyCards{
+    float: right;
+}
+/* CARDS */
+
+.firstCard, .secondCard, .thirdCard{
+    font-size: 12px;
+}
+.firstCard:hover{
+    background-color: green;
+    transition: 1s;
+    color: #F5F5F5;
+}
+.cardsectionGroup{
+    position: relative;
+}
+.secondCard {
+    position: relative;
+    margin-top: -40px;
+}
+
+.thirdCard:hover{
+    background-color: blue;
+    transition: 1s;
+    color: #F5F5F5;
+}
+/* PRIZE SECTION */
+
+.prize{
+    background: linear-gradient(-1050deg,  #132351, #132351,#132351,#132351,#c65762);
+    padding: 30px;
+    transform: translate(12px,0);
+    color: white;
+    width: 100%;
+    height: inherit;
+   
+}
+.prizeTxt{
+    margin-top: 60px;
+    transform: translate(0,75px);
+}
+
+.laptop, .watch{
+    transition: all 1s ease;
+}
+.laptop:hover{
+    transform: rotate(30deg);
+   
+}
+.watch:hover{
+    transform: rotate(-20deg);   
+}
+
+.partnerSection,.mediaPartnerSection,.communityPartnerSection {
+    margin-top: 90px;
+}
+.animates{
+    animation: move 10s linear infinite forwards;
+}
+@keyframes move {
+    0%{
+        transform: translate(1200px,0);
+    }
+
+    100%{
+        transform: translate(-1300px,0);
+    }
+}
+
+.animator{
+    animation: moving 35s linear infinite forwards;
+}
+@keyframes moving {
+    0%{
+        transform: translate(1200px,0);
+    }
+
+    100%{
+        transform: translate(-2400px,0);
+    }
+}
+
+.footer{
+    background: #132351;
+}
+.footerNav a{
+    position: relative;
+    right: -13%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
